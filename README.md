@@ -35,7 +35,7 @@ Pré-requisitos:
 Ferramentas para Download:
 
 * OCAuxiliaryTools 👉 👉 [https://github.com/ic005k/QtOpenCoreConfig](https://github.com/ic005k/QtOpenCoreConfig)
-* OCAuxiliaryTools (Utilizado No Vídeo) 👉 👉 [https://github.com/ic005k/OCAuxiliaryTools/releases/tag/20220142](https://github.com/ic005k/OCAuxiliaryTools/releases/tag/20220142)
+* OCAuxiliaryTools (Utilizado No Vídeo) 👉 👉 [https://github.com/ic005k/OCAuxiliaryTools/releases/tag/20220143](https://github.com/ic005k/OCAuxiliaryTools/releases/tag/20220143)
 * Aida64 Download 👉 👉 [https://www.aida64.com/](https://www.aida64.com/)
 * Rufus 👉 👉 [https://rufus.ie](https://rufus.ie)
 
