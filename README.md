@@ -199,7 +199,7 @@ Em Nvram -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args, adicionar 
 
 
 <details>
-<summary>Específicos para GPU</summary>
+<summary>Específicos para Debug</summary>
 
 
 | Boot-arg                | Description                                                                                                                                                                                                                                                                                              |
