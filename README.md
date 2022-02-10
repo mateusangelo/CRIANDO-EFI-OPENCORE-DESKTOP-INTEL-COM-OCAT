@@ -1,22 +1,32 @@
-# CRIANDO EFI OPENCORE P/DESKTOP INTEL COM OCAT (OC Auxiliary Tools)
-HACKINTOSH: CRIANDO EFI OPENCORE DESKTOP INTEL COM OCAT + GUIA INSTALAÇÃO COMPLETO 100% VANILLA 
+# HACKINTOSH: CRIANDO EFI OPENCORE P/DESKTOP INTEL COM OCAT (OC Auxiliary Tools)
+BONUS: GUIA DE INSTALAÇÃO COMPLETO 100% VANILLA 
 
 
 
 Importante:
 
 * A partir desse ponto o OC Auxiliary Tools será referenciado  como OCAT
-* Esse guia é compativel com Desktop Intel com processadores de 1ª até 12ª geração
+* Esse guia é compatível com Desktop Intel com processadores de 1ª até 12ª geração
 * Em caso de Duvidas, acesse nossas comunidades:
- *  YouTube 👉  [https://www.youtube.com/c/DicasdoMateus]()
- * Grupo Telegram 👉  [https://t.me/grupodicasdomateus]()
+
+
+	 * Telegram 👉  [https://t.me/grupodicasdomateus]()
   *  Discord 👉  [http://dicasdomateus.com.br/d]()
+  *  YouTube 👉  [https://www.youtube.com/c/DicasdoMateus]()
+
+
+Dicas para Sucesso:
+
+* Para hackintoshers de primeira viagem, instalem o que é primeiramente compatível com o seu Hardware. Ex.: Não tente ir direto para o Monterey se sua placa necessita de um patch para funcionar nele. Instala o Big Sur antes.
+
+
 
 Pré-requisitos:
 
-* Ter um Pendrive USB, de preferencia 3.0, para criação da Imagem  de Instalação
+* Ter um Pendrive USB, de preferencia 3.0, para criação da Imagem de Instalação
 
 Ferramentas para Download:
+
 
 * OCAuxiliaryTools 👉 👉 [https://github.com/ic005k/QtOpenCoreConfig]()
 * Aida64 Download 👉 👉 [https://www.aida64.com/]()
@@ -36,10 +46,10 @@ Extra: Vídeo detalhado de como instalar e usar o Aida64 [https://youtu.be/9v3U7
 ]()
 
 ## 2) Verificar Placa de Vídeo
- Verificar se sua placa de Vídeo Externa (eGPU) é compatível com Hackintosh conforme lista abaixo. Caso voce só tenha iGPU ignorar essa parte.
+ Verificar se sua placa de Vídeo Externa (eGPU) é compatível com Hackintosh conforme lista abaixo. Caso você só tenha iGPU ignorar essa parte.
  
 <details>
-<summary>Lista de Placas de Video Compativel com Hackintosh</summary>
+<summary>Lista de Placas de Vídeo Compatíveis com Hackintosh</summary>
 
 | Sistema       | Placa de Video                                                                                                                                                                                                                                                                                                                                                                                 | Extra                                                                                                                                                         |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -50,7 +60,7 @@ Extra: Vídeo detalhado de como instalar e usar o Aida64 [https://youtu.be/9v3U7
 
 </details>
 
-Extra: Placas de Videos Compativeis com MacOS Monterey [https://youtu.be/Z_1Il-jQuq8](https://youtu.be/Z_1Il-jQuq8)
+Extra: Placas de Vídeos Compatíveis com MacOS Monterey [https://youtu.be/Z_1Il-jQuq8](https://youtu.be/Z_1Il-jQuq8)
 
 ## 3) Definir Template OC Auxiliary Tools
 
@@ -102,26 +112,30 @@ Alternativo, Lista de Templates OCAT em formato Excel 👉  [https://bit.ly/ocat
 
 
 ## 4) Gerando a EFI
-Executar o OCAT e gerar a EFI de acordo com o template selecionado no Item 3.
+Hora de gerar a EFI para seu Hackintosth usando o OCAT de acordo com o template selecionado no Item 3.
 
-### 4.1) Criando EFI
-Abrir o OCAT, clicar em Database, selecionar o Template e clicar duas vezes sobre ele para gerar.
+### 4.1) Criando a EFI Base
+Abrir o OCAT, clicar em Database, selecionar o Template e clicar duas vezes sobre ele para gerar EFI Base.
 
 ### 4.2) Device Properties
 Clicar em DP, e ajustar o Device Properties conforme regras abaixo:
 
 * Para processadores F ou SMBIOS MacPro6,1, MacPro7,1 ou iMacPro1,1: Limpar todos os itens no Device Properties. 
-* Para processadores com video integrado e com ou sem placa de video externa manter o Device Properties de acordo com a regra definida na coluna extra do item 3. Limpar os itens não necessario
+* Para processadores com vídeo integrado e com ou sem placa de vídeo externa manter o Device Properties de acordo com a regra definida na coluna extra do item 3. Limpar os itens não necessário
 
 			
 ### 4.3) Kernel
-Adcionar kexts adcionais de USB e Placa de Rede
+Adicionar Kexts adicionais referente a gerenciamento de USB, Placa de Rede, etc. etc...
 
-* USB
-	* Adcionar as Kext USBInjectAll.kext
-	* Se pendrive de Boot 3.0, setar Kernel -> Quirks -> XhciPortLimit = True
-* Placa de Rede
-	* Adcionar Kext conforme lista abaixo:
+#### 4.3.1) USB
+
+* Adcionar a Kext USBInjectAll.kext
+* Setar Kernel -> Quirks -> XhciPortLimit = True
+
+#### 4.3.2) Placa de Rede
+
+<details>
+<summary>Adcionar da Kexts Placa de Rede conforme lista abaixo:</summary>
 
 | Kext                      | Description                                                                                                                                                            |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -131,10 +145,13 @@ Adcionar kexts adcionais de USB e Placa de Rede
 | LucyRTL8125Ethernet.kext  | For Realtek's 2.5Gb Ethernet.                                                                                                                                          |
 | SmallTreeIntel82576.kext  | Required for I211 NICs, based off of the SmallTree kext but patched to support I211.<br>Required for most AMD boards running Intel NICs.                               |
 
+</details>
+
+#### 4.3.3) Kexts Opcionais
 
 
-* Outras Kext Opcionais
-	* Só adicione se necessário[]()
+<details>
+<summary>Kexts Opcionais. Só adicione se necessário</summary>
 	
 | Kext                     | Description                                                                                                                                                                     |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -143,10 +160,18 @@ Adcionar kexts adcionais de USB e Placa de Rede
 | AppleMCEReporterDisabler | Useful starting with Catalina to disable the AppleMCEReporter kext which will cause kernel panics on AMD CPUs.<br>Recommended for dual-socket systems (ie. Intel Xeon).         |
 | RestrictEvents           | Better experience with unsupported processors like AMD, Disable MacPro7,1 memory warnings and provide upgrade to macOS Monterey via Software Updates when available.            |
 
-### 4.3) Boot Args
-Em Nvram -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args, adcionar parametros opcionais conforme lista abaixo:
+</details>
 
-* Especificos para GPU
+
+### 4.4) Misc
+* Setar Misc -> Security -> SecureBootModel = Disabled
+* Setar Misc -> Security -> SecureBootModel =  0
+
+### 4.5) Boot Args
+Em Nvram -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args, adicionar os parâmetros opcionais conforme lista abaixo:
+
+<details>
+<summary>Específicos para GPU</summary>
 
 | Boot-arg       | Description                                                                                                                                                                                                                                        |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -156,8 +181,13 @@ Em Nvram -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args, adcionar p
 | \-wegnoigpu    | to disable internal GPU                                                                                                                                                                                                                            |
 | nvda\_drv=1    | Enable Web Drivers for NVIDIA Graphics Cards (supported up to macOS High Sierra only).                                                                                                                                                             |
 | nv\_disable=1  | Disables NVIDIA GPUs (don't combine this with nvda\_drv=1)                                                                                                                                                                                         |
+</details>
 
-* Especificos para Debug
+
+
+<details>
+<summary>Específicos para GPU</summary>
+
 
 | Boot-arg                | Description                                                                                                                                                                                                                                                                                              |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -169,21 +199,30 @@ Em Nvram -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args, adcionar p
 | npci=0x2000/npci=0x3000 | Disables PCI debugging related to kIOPCIConfiguratorPFM64. Alternatively, use npci=0x3000 which also disables debugging of gIOPCITunnelledKey. Required when stuck at PCI Start Configuration as there are IRQ conflicts related to your PCI lanes. Not needed if Above4GDecoding can be enabled in BIOS |
 | \-no\_compat\_check     | Disables macOS compatibility check. For example, macOS 11.0 BigSur no longer supports iMac models introduced before 2014. Enabling this allows installing andd booting macOS on otherwise unsupported SMBIOS. Downside: you can't install system updates if this is enabled.                             |
 
-* Especificos para Audio
+</details>
+
+<details>
+<summary>Específicos para Áudio</summary>
+
 
 | Boot-arg | Description                                                                                                                                                                                       |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | alcid=1  | Used for setting layout-id for AppleALC, see supported codecs (opens new window)to figure out which layout to use for your specific system. More info on this is covered in the Post-Install Page |
 
+</details>
 
-### 4.4) Gerando Serial
-Em Plataform Info, clicar em Generate ao lado do campo SytemProductName e ROM
+### 4.6) Gerando Serial
+Em Plataform Info, clicar em Generate ao lado do campo “SytemProductName” e “ROM”
 
-### 4.5) Gravar EFI
+### 4.7) UEFI
+* Setar UEFI -> APFS -> MinDate = -1
+* Setar UEFI -> APFS -> MinVersion =  -1
+
+### 4.8) Gravar EFI
 Salvar todos os ajustes feitos na EFI para adicionar no Pendrive de Boot
 
 ## 5) Criar Pendrive de Boot:
-Apos definir a versão a ser instalada, no link abaixo e fazer download da Imagem do MacOS a ser instalado:
+Após definir a versão a ser instalada, no link abaixo e fazer download da Imagem do MacOS a ser instalado:
 
 * Download ISO From Olarila 👉 👉 [https://www.olarila.com/topic/6278-olarila-vanilla-images/](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/winblows-install.html#making-the-installer-in-windows)
 
@@ -193,17 +232,22 @@ Links alternativos para Baixar o Big Sur 11.2
 * ISO Big Sur 11.2 👉 👉 [https://bit.ly/ISOBIGSUR2]() 
 * ISO Big Sur 11.2 👉 👉 [https://bit.ly/ISOBigSUR3]()
 
-Apos baixar a imagem, usar o Rufus para gravar ela pendrive de boot.
+Após baixar a imagem, usar o Rufus para gravar ela pendrive de boot.
 
 Alternativo: Método oficial do Opencore para Criar Pendrive de Boot Direto da Apple no Windows [Aqui
 ](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/winblows-install.html#making-the-installer-in-windows)
 ## 6) Copiando EFI para Pendrive:
-Abrir o OCAT, clicar em MountESP, selecionar o pendrive na lista de disco disponiveis e clicar em Mount.
+Abrir o OCAT, clicar em MountESP, selecionar o Pendrive na lista de disco disponíveis e clicar em Mount.
 
-Apos abrir a partição EFI, delete todo o conteudo da partição e copie a pasta EFI gerada no passo 4 para ela.
+Apos abrir a partição EFI, delete todo o conteúdo da partição e copie a pasta EFI gerada no passo 4 para ela.
 
 
 ## 7) Pre-Install Ajuste de Bios:
+Executar os ajustes de Bios, conforme lista abaixo. Alguns itens podem não existir na sua Bios, somente altere os itens que você encontra.
+
+<details>
+<summary>Ajustes de Bios</summary>
+
 * Disable
 	* Fast Boot
 	* Secure Boot
@@ -228,13 +272,15 @@ Apos abrir a partição EFI, delete todo o conteudo da partição e copie a past
 		* 64MB para Ivy Bridge com Big Sur, Haswell ou Superior.  
 	* SATA Mode: AHCI
 
-Extra: Exemplo Ajuste de Bios 👉 [Bios 01](https://youtu.be/FOrov-ur4qA) [Bios 02](https://youtu.be/EUolzdvEpDA)
+</details>
+
+Extra: Exemplos Ajuste de Bios 👉 [Bios 01](https://youtu.be/FOrov-ur4qA) [Bios 02](https://youtu.be/EUolzdvEpDA)
 
 ## 8) Instalar Mac OS:
 Fazer boot pelo pendrive, no menu do Opencore, selecionar Install Mac Os [Nome da versão que escolher], e ir até o final.
 
-* Caso tenha problema com video integrado, colocar o atributo -igfxvesa e tentar novamente
-* Caso apareça mensagem de proibido, apos selecionar imagem para instalar, trocar pendrive de porta, escolhendo uma 2.0/3.0 na traseira da maquina.
+* Caso tenha problema com vídeo integrado, colocar o atributo -igfxvesa e tentar novamente
+* Caso apareça mensagem de proibido, após selecionar imagem para instalar, trocar pendrive de porta, escolhendo uma 2.0/3.0 na direto na placa mãe
 
 Extra: Como instalar MacOS [Big Sur](https://youtu.be/i7F7WtXXbhs) e [Monterey](https://youtu.be/b6g-W4gyQm0)
 
