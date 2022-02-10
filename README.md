@@ -13,12 +13,19 @@ Importante:
 	 * Telegram 👉  [https://t.me/grupodicasdomateus]()
   *  Discord 👉  [http://dicasdomateus.com.br/d]()
   *  YouTube 👉  [https://www.youtube.com/c/DicasdoMateus]()
+* Versão Opencore: 0.7.8
 
+Dica para Sucesso:
 
-Dicas para Sucesso:
+* Para hackintoshers de primeira viagem, instalem o que é primeiramente compatível com o seu Hardware. Ex.: Não tente ir direto para o Monterey se sua placa vídeo necessita de um patch para funcionar nele. Instala o Big Sur antes.
 
-* Para hackintoshers de primeira viagem, instalem o que é primeiramente compatível com o seu Hardware. Ex.: Não tente ir direto para o Monterey se sua placa necessita de um patch para funcionar nele. Instala o Big Sur antes.
+Hardware Recomendado:
 
+* CPU: Intel Core i3 to i9, Haswell (4th-gen) to Comet Lake (10th-gen)
+* MB: Preferably a Gigabyte or Asus motherboard
+* GPU: Intel iGPU or a dedicated AMD GPU (Radeon RX 460 to RX 6900 XT): preferably Sapphire, Gigabyte or Asus
+* 8 GB or more RAM
+* SATA or NVMe SSD main drive with at least 120 GB
 
 
 Pré-requisitos:
@@ -27,14 +34,15 @@ Pré-requisitos:
 
 Ferramentas para Download:
 
-
 * OCAuxiliaryTools 👉 👉 [https://github.com/ic005k/QtOpenCoreConfig]()
+* OCAuxiliaryTools (Utilizado No Vídeo) 👉 👉 [https://github.com/ic005k/OCAuxiliaryTools/releases/tag/20220142]()
 * Aida64 Download 👉 👉 [https://www.aida64.com/]()
 * Rufus 👉 👉 [https://rufus.ie]()
 
 
+
 ## 1) Definir Hardware:
-Gerar report de Hardware do Aida64 e Definir:
+Gerar report de Hardware do Aida64 e definir os seguintes itens:
 
 * Processador:
 * Chipset Placa Mãe:
@@ -64,7 +72,7 @@ Extra: Placas de Vídeos Compatíveis com MacOS Monterey [https://youtu.be/Z_1Il
 
 ## 3) Definir Template OC Auxiliary Tools
 
-Verificar qual template do OC Auxiliary Tool sera utilizado para gerar a EFI, de acordo com a lista abaixo. Considerar as informações levantadas no Item 1 e 2. Caso tenha eGPU considerar a versão do MacOS que sua eGPU suporta para selecionar o template.
+Verificar qual template do OC Auxiliary Tool sera utilizado para gerar a EFI, de acordo com a lista abaixo. Considerar as informações levantadas no Item 1 e 2. Caso tenha eGPU considerar a versão do MacOS que sua eGPU é nativamente suportada para escolher o template.
 
 <details>
 <summary>Lista de Templates OCAT</summary>
@@ -129,8 +137,9 @@ Adicionar Kexts adicionais referente a gerenciamento de USB, Placa de Rede, etc.
 
 #### 4.3.1) USB
 
-* Adcionar a Kext USBInjectAll.kext
-* Setar Kernel -> Quirks -> XhciPortLimit = True
+Adcionar a Kext USBInjectAll.kext
+
+Setar Kernel -> Quirks -> XhciPortLimit = True
 
 #### 4.3.2) Placa de Rede
 
@@ -164,10 +173,14 @@ Adicionar Kexts adicionais referente a gerenciamento de USB, Placa de Rede, etc.
 
 
 ### 4.4) Misc
-* Setar Misc -> Security -> SecureBootModel = Disabled
-* Setar Misc -> Security -> SecureBootModel =  0
+Setar Misc -> Security -> SecureBootModel = Disabled
+
+Setar Misc -> Security -> SecureBootModel =  0
 
 ### 4.5) Boot Args
+
+Em Nvram -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> prev-lang:kbd = pt-BR:128
+
 Em Nvram -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args, adicionar os parâmetros opcionais conforme lista abaixo:
 
 <details>
@@ -215,8 +228,9 @@ Em Nvram -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args, adicionar 
 Em Plataform Info, clicar em Generate ao lado do campo “SytemProductName” e “ROM”
 
 ### 4.7) UEFI
-* Setar UEFI -> APFS -> MinDate = -1
-* Setar UEFI -> APFS -> MinVersion =  -1
+Setar UEFI -> APFS -> MinDate = -1
+
+Setar UEFI -> APFS -> MinVersion =  -1
 
 ### 4.8) Gravar EFI
 Salvar todos os ajustes feitos na EFI para adicionar no Pendrive de Boot
