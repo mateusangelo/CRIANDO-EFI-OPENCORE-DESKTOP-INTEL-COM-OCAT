@@ -10,9 +10,9 @@ Importante:
 * Em caso de Duvidas, acesse nossas comunidades:
 
 
-	 * Telegram 👉  [https://t.me/grupodicasdomateus]()
-  *  Discord 👉  [http://dicasdomateus.com.br/d]()
-  *  YouTube 👉  [https://www.youtube.com/c/DicasdoMateus]()
+	 * Telegram 👉  [https://t.me/grupodicasdomateus](https://t.me/grupodicasdomateus)
+  *  Discord 👉  [http://dicasdomateus.com.br/d](http://dicasdomateus.com.br/d)
+  *  YouTube 👉  [https://www.youtube.com/c/DicasdoMateus](https://www.youtube.com/c/DicasdoMateus)
 * Versão Opencore: 0.7.8
 
 Dica para Sucesso:
@@ -34,10 +34,10 @@ Pré-requisitos:
 
 Ferramentas para Download:
 
-* OCAuxiliaryTools 👉 👉 [https://github.com/ic005k/QtOpenCoreConfig]()
-* OCAuxiliaryTools (Utilizado No Vídeo) 👉 👉 [https://github.com/ic005k/OCAuxiliaryTools/releases/tag/20220142]()
-* Aida64 Download 👉 👉 [https://www.aida64.com/]()
-* Rufus 👉 👉 [https://rufus.ie]()
+* OCAuxiliaryTools 👉 👉 [https://github.com/ic005k/QtOpenCoreConfig](https://github.com/ic005k/QtOpenCoreConfig)
+* OCAuxiliaryTools (Utilizado No Vídeo) 👉 👉 [https://github.com/ic005k/OCAuxiliaryTools/releases/tag/20220142](https://github.com/ic005k/OCAuxiliaryTools/releases/tag/20220142)
+* Aida64 Download 👉 👉 [https://www.aida64.com/](https://www.aida64.com/)
+* Rufus 👉 👉 [https://rufus.ie](https://rufus.ie)
 
 
 
@@ -238,13 +238,13 @@ Salvar todos os ajustes feitos na EFI para adicionar no Pendrive de Boot
 ## 5) Criar Pendrive de Boot:
 Após definir a versão a ser instalada, no link abaixo e fazer download da Imagem do MacOS a ser instalado:
 
-* Download ISO From Olarila 👉 👉 [https://www.olarila.com/topic/6278-olarila-vanilla-images/](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/winblows-install.html#making-the-installer-in-windows)
+* Download ISO From Olarila 👉 👉 [https://www.olarila.com/topic/6278-olarila-vanilla-images/](https://www.olarila.com/topic/6278-olarila-vanilla-images/)
 
 Links alternativos para Baixar o Big Sur 11.2
 
-* ISO Big Sur 11.2 👉 👉 [https://bit.ly/ISOBigSur]() 
-* ISO Big Sur 11.2 👉 👉 [https://bit.ly/ISOBIGSUR2]() 
-* ISO Big Sur 11.2 👉 👉 [https://bit.ly/ISOBigSUR3]()
+* ISO Big Sur 11.2 👉 👉 [https://bit.ly/ISOBigSur](https://bit.ly/ISOBigSur) 
+* ISO Big Sur 11.2 👉 👉 [https://bit.ly/ISOBIGSUR2](https://bit.ly/ISOBIGSUR2) 
+* ISO Big Sur 11.2 👉 👉 [https://bit.ly/ISOBigSUR3](https://bit.ly/ISOBigSUR3)
 
 Após baixar a imagem, usar o Rufus para gravar ela pendrive de boot.
 
