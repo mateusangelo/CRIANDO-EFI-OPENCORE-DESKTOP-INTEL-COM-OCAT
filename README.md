@@ -54,12 +54,12 @@ Extra: Vídeo detalhado de como instalar e usar o Aida64 [https://youtu.be/9v3U7
 ]()
 
 ## 2) Verificar Placa de Vídeo
- Verificar se sua placa de Vídeo Externa (eGPU) é compatível com Hackintosh conforme lista abaixo. Caso você só tenha iGPU ignorar essa parte.
+ Verificar se sua placa de Vídeo Externa (eGPU) ou Interna (iGPU) é compatível com Hackintosh conforme lista abaixo.
  
 <details>
-<summary>Lista de Placas de Vídeo Compatíveis com Hackintosh</summary>
+<summary>Lista de Placas de Vídeo (eGPU) Compatíveis com Hackintosh</summary>
 
-| Sistema       | Placa de Video                                                                                                                                                                                                                                                                                                                                                                                 | Extra                                                                                                                                                         |
+| Sistema       | Placa de Video(eGPU)                                                                                                                                                                                                                                                                                                                                                                                 | Extra                                                                                                                                                         |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Monterey      | RX 460, 470, 480, 550 (Baffin Core), 560, 570, 580,  590<br>RX 6600XT, RX 6800 (XT), RX 6900 XT<br>RX 5500 (XT), RX 5600 (XT) , RX 5700 (XT)<br>VEGA 64, VEGA 56<br>R7/R9 240, 250, 250x, 260(X)/360(X), 265, 270(X)/370(X), 280(X)/380(X), 290(X)/380(X), Não, Fury (X)<br>HD 8740, 8760, 8770, 8850, 8870, 8890, 8950, 8970<br>HD 7700, 7730, 7750, 7770, 7790, 7850, 7870, 7950, 7970, 7990 | RX 6600Xt  Suportada no Monterey 12.1<br>RX 6800 e 6900 Suportada no Big Sur 11.4                                                                             |
 | Big Sur       | GTX Titan, 780 (Ti), 770, 760 (Ti)<br>GT 740 (GK107), 730 (GK208), 720, 710(GK208)<br>GTX 690, 680, 660 Ti, 660 (GK104) 650 (GK107)<br>GT 640 (GK107/GK208), 635, 630 (GK107/GK208)<br>Quadro K6000, K5200, K5000, K4200, K4200, K600, K420, 410<br>NVS 510                                                                                                                                    | Pode instalar o Monterey Aplicando Patch                                                                                                                      |
@@ -68,7 +68,20 @@ Extra: Vídeo detalhado de como instalar e usar o Aida64 [https://youtu.be/9v3U7
 
 </details>
 
+<details>
+<summary>Lista de Placas de Vídeo Intel (iGPU) Compatíveis com Hackintosh</summary>
+
+| Sistema       | Placa de Video Intel (iGPU)                                                                                                                                                                                                    |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Monterey      | HD 4200, 4400, 4600, 5000, 5100, 5300, 5500, 5600, 6000, 6100, 6200<br>Iris Plus 640, 645, 650, 655<br>HD 515, 520, 530, P530<br>Iris 540, 550<br>Iris Pro 580, P555, P580, P6300<br>UHD 615, 617 620, 630<br>Iris Plus G4, G7 |
+| Big Sur       | HD 4000, P4000                                                                                                                                                                                                                 |
+| High Sierra   | HD 2000 , 2500, 3000, P3000                                                                                                                                                                                                    |
+| Não Suportada | HD 400, 405, 500, 505, 510,  610<br>UHD 600, 605, 610                                                                                                                                                                          |
+
+</details>
+
 Extra: Placas de Vídeos Compatíveis com MacOS Monterey [https://youtu.be/Z_1Il-jQuq8](https://youtu.be/Z_1Il-jQuq8)
+
 
 ## 3) Definir Template OC Auxiliary Tools
 
