@@ -188,7 +188,7 @@ Setar Kernel -> Quirks -> XhciPortLimit = True
 ### 4.4) Misc
 Setar Misc -> Security -> SecureBootModel = Disabled
 
-Setar Misc -> Security -> SecureBootModel =  0
+Setar Misc -> Security -> Scam Policy =  0
 
 ### 4.5) Boot Args
 
