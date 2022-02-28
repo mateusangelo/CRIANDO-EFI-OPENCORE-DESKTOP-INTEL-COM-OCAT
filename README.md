@@ -150,7 +150,7 @@ Adicionar Kexts adicionais referente a gerenciamento de USB, Placa de Rede, etc.
 
 #### 4.3.1) USB
 
-Adcionar a Kext USBInjectAll.kext
+Adcionar a Kext [USBInjectAll.kext](https://github.com/daliansky/OS-X-USB-Inject-All/releases) e [XHCI-unsupported.kext](https://github.com/daliansky/OS-X-USB-Inject-All/releases)
 
 Setar Kernel -> Quirks -> XhciPortLimit = True
 
@@ -161,11 +161,11 @@ Setar Kernel -> Quirks -> XhciPortLimit = True
 
 | Kext                      | Description                                                                                                                                                            |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| IntelMausi.kext           | Intel's 82578, 82579, I217, I218 and I219 NICs are officially supported.                                                                                               |
-| AtherosE2200Ethernet.kext | Required for Atheros and Killer NICs.<br>Note: Atheros Killer E2500 models are actually Realtek based, for these systems please use RealtekRTL8111 instead.            |
-| RealtekRTL8111.kext       | For Realtek's Gigabit Ethernet.<br>Sometimes the latest version of the kext might not work properly with your Ethernet. If you see this issue, try older versions.<br> |
-| LucyRTL8125Ethernet.kext  | For Realtek's 2.5Gb Ethernet.                                                                                                                                          |
-| SmallTreeIntel82576.kext  | Required for I211 NICs, based off of the SmallTree kext but patched to support I211.<br>Required for most AMD boards running Intel NICs.                               |
+| [IntelMausi.kext](https://github.com/acidanthera/IntelMausi/releases)           | Intel's 82578, 82579, I217, I218 and I219 NICs are officially supported.                                                                                               |
+| [AtherosE2200Ethernet.kext](https://github.com/Mieze/AtherosE2200Ethernet/releases) | Required for Atheros and Killer NICs.<br>Note: Atheros Killer E2500 models are actually Realtek based, for these systems please use RealtekRTL8111 instead.            |
+| [RealtekRTL8111.kext](https://github.com/Mieze/RTL8111_driver_for_OS_X/releases)       | For Realtek's Gigabit Ethernet.<br>Sometimes the latest version of the kext might not work properly with your Ethernet. If you see this issue, try older versions.<br> |
+| [LucyRTL8125Ethernet.kext](https://www.insanelymac.com/forum/files/file/1004-lucyrtl8125ethernet/)  | For Realtek's 2.5Gb Ethernet.                                                                                                                                          |
+| [SmallTreeIntel82576.kext](https://github.com/khronokernel/SmallTree-I211-AT-patch/releases)  | Required for I211 NICs, based off of the SmallTree kext but patched to support I211.<br>Required for most AMD boards running Intel NICs.                               |
 
 </details>
 
@@ -177,10 +177,10 @@ Setar Kernel -> Quirks -> XhciPortLimit = True
 	
 | Kext                     | Description                                                                                                                                                                     |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| NVMeFix                  | Used for fixing power management and initialization on non-Apple NVMe.                                                                                                          |
-| SATA-Unsupported         | Adds support for a large variety of SATA controllers, mainly relevant for laptops which have issues seeing the SATA drive in macOS.<br>We recommend testing without this first. |
-| AppleMCEReporterDisabler | Useful starting with Catalina to disable the AppleMCEReporter kext which will cause kernel panics on AMD CPUs.<br>Recommended for dual-socket systems (ie. Intel Xeon).         |
-| RestrictEvents           | Better experience with unsupported processors like AMD, Disable MacPro7,1 memory warnings and provide upgrade to macOS Monterey via Software Updates when available.            |
+| [NVMeFix](https://github.com/acidanthera/NVMeFix/releases)                  | Used for fixing power management and initialization on non-Apple NVMe.                                                                                                          |
+| [SATA-Unsupported](https://github.com/khronokernel/Legacy-Kexts/blob/master/Injectors/Zip/SATA-unsupported.kext.zip)         | Adds support for a large variety of SATA controllers, mainly relevant for laptops which have issues seeing the SATA drive in macOS.<br>We recommend testing without this first. |
+| [AppleMCEReporterDisabler](https://github.com/acidanthera/bugtracker/files/3703498/AppleMCEReporterDisabler.kext.zip) | Useful starting with Catalina to disable the AppleMCEReporter kext which will cause kernel panics on AMD CPUs.<br>Recommended for dual-socket systems (ie. Intel Xeon).         |
+| [RestrictEvents](https://github.com/acidanthera/RestrictEvents/releases)           | Better experience with unsupported processors like AMD, Disable MacPro7,1 memory warnings and provide upgrade to macOS Monterey via Software Updates when available.            |
 
 </details>
 
