@@ -6,7 +6,7 @@ BONUS: GUIA DE INSTALAÇÃO COMPLETO 100% VANILLA
 Importante:
 
 * A partir desse ponto o OC Auxiliary Tools será referenciado  como OCAT
-* Esse guia é compatível com Desktop Intel com processadores de 1ª até 12ª geração
+* Esse guia é compatível com Desktop Intel com processadores de 1ª até 11ª geração
 * Em caso de Duvidas, acesse nossas comunidades:
 
 
@@ -35,7 +35,7 @@ Pré-requisitos:
 Ferramentas para Download:
 
 * OCAuxiliaryTools 👉 👉 [https://github.com/ic005k/QtOpenCoreConfig](https://github.com/ic005k/QtOpenCoreConfig)
-* OCAuxiliaryTools (Utilizado No Vídeo) 👉 👉 [https://github.com/ic005k/OCAuxiliaryTools/releases/tag/20220143](https://github.com/ic005k/OCAuxiliaryTools/releases/tag/20220143)
+* OCAuxiliaryTools (Utilizado No Vídeo) 👉 👉 [https://github.com/ic005k/OCAuxiliaryTools/releases/tag/20220197](https://github.com/ic005k/OCAuxiliaryTools/releases/tag/20220197)
 * Aida64 Download 👉 👉 [https://www.aida64.com/](https://www.aida64.com/)
 * Rufus 👉 👉 [https://rufus.ie](https://rufus.ie)
 
@@ -304,6 +304,7 @@ Extra: Como instalar MacOS [Big Sur](https://youtu.be/i7F7WtXXbhs) e [Monterey](
 * Mapeament de USBs:
 	* Como Mapear Portas USBs até big sur 11.2 👉 👉 [https://youtu.be/X6djBycrcx4 ](https://youtu.be/b6g-W4gyQm0)
 	* Como Mapear Portas USBs acima big sur 11.3 👉 👉 [https://youtu.be/4z76yO5_2aU](https://youtu.be/b6g-W4gyQm0)
+	* Como Mapear Portas USBs no Windows 👉 👉 [https://youtu.be/UzSLTpiBfO8](https://youtu.be/UzSLTpiBfO8)
 * Ajustando Audio HDMI e Mapeando Conectores 👉 👉 [https://youtu.be/NIoPq2w8q18](https://youtu.be/NIoPq2w8q18)
 
 
