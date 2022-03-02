@@ -184,6 +184,9 @@ Setar Kernel -> Quirks -> XhciPortLimit = True
 
 </details>
 
+#### 4.3.4) Bluetooth
+
+Caso esteja instalando Monterey e você tenha bluetooth na sua placa mãe ou em placa Wifi Intel ou nativa, incluir a Kext BlueToolFixup.Kext na EFI.
 
 ### 4.4) Misc
 Setar Misc -> Security -> SecureBootModel = Disabled
@@ -314,11 +317,24 @@ Extra: Como instalar MacOS [Big Sur](https://youtu.be/i7F7WtXXbhs) e [Monterey](
 ## 9) Post Install:
 * Copiar a pasta EFI para a partição EFI do disco que foi instalado o MacOS, para dar boot sem pendrive.
 
+
+* Fix Audio
+	* Guia 👉 [https://dortania.github.io/OpenCore-Post-Install/universal/audio.html](https://dortania.github.io/OpenCore-Post-Install/universal/audio.html)
+	* 	Lista de Codecs 👉 [https://github.com/acidanthera/AppleALC/wiki/Supported-codecs](https://github.com/acidanthera/AppleALC/wiki/Supported-codecs)
+
+
+
 * Mapeament de USBs:
 	* Como Mapear Portas USBs até big sur 11.2 👉 👉 [https://youtu.be/X6djBycrcx4 ](https://youtu.be/b6g-W4gyQm0)
 	* Como Mapear Portas USBs acima big sur 11.3 👉 👉 [https://youtu.be/4z76yO5_2aU](https://youtu.be/b6g-W4gyQm0)
 	* Como Mapear Portas USBs no Windows 👉 👉 [https://youtu.be/UzSLTpiBfO8](https://youtu.be/UzSLTpiBfO8)
 * Ajustando Audio HDMI e Mapeando Conectores 👉 👉 [https://youtu.be/NIoPq2w8q18](https://youtu.be/NIoPq2w8q18)
+
+* Wifi:
+	* Configurar Wifi Intel no Monterey 👉 👉 [https://youtu.be/-L9H6gVq7wk ](https://youtu.be/-L9H6gVq7wk)
+	* 	Configurar Wifi Intel no Big Sur 👉 👉 [https://youtu.be/L6HX0BZz4q4 ](https://youtu.be/L6HX0BZz4q4)
+	* Configurar Wifi Nativo Big Sur 👉 👉 [https://youtu.be/PRMdiiPSPBU](https://youtu.be/PRMdiiPSPBU)
+
 
 
 ## 10) Referencias:
