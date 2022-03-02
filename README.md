@@ -318,12 +318,12 @@ Extra: Como instalar MacOS [Big Sur](https://youtu.be/i7F7WtXXbhs) e [Monterey](
 * Copiar a pasta EFI para a partição EFI do disco que foi instalado o MacOS, para dar boot sem pendrive.
 
 
-* Fix Audio
+* Fix Audio:
 	* Guia 👉 [https://dortania.github.io/OpenCore-Post-Install/universal/audio.html](https://dortania.github.io/OpenCore-Post-Install/universal/audio.html)
 	* 	Lista de Codecs 👉 [https://github.com/acidanthera/AppleALC/wiki/Supported-codecs](https://github.com/acidanthera/AppleALC/wiki/Supported-codecs)
 
-
-
+* Desativar Verbose e mode Debug 👉 [https://youtu.be/aDXj9XpiIB4
+](https://youtu.be/aDXj9XpiIB4)
 * Mapeament de USBs:
 	* Como Mapear Portas USBs até big sur 11.2 👉 👉 [https://youtu.be/X6djBycrcx4 ](https://youtu.be/b6g-W4gyQm0)
 	* Como Mapear Portas USBs acima big sur 11.3 👉 👉 [https://youtu.be/4z76yO5_2aU](https://youtu.be/b6g-W4gyQm0)
