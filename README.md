@@ -39,6 +39,11 @@ Ferramentas para Download:
 * Aida64 Download 👉 👉 [https://www.aida64.com/](https://www.aida64.com/)
 * Rufus 👉 👉 [https://rufus.ie](https://rufus.ie)
 
+Ferramentas Extras para Download:
+
+* ESP Mounter Pro  👉 👉 [https://www.olarila.com/files/Utils/ESP%20Mounter%20Pro.app_v1.9.1.zip](https://www.olarila.com/files/Utils/ESP%20Mounter%20Pro.app_v1.9.1.zip)
+* Hackintool 👉 👉 [https://github.com/headkaze/Hackintool/releases](https://github.com/headkaze/Hackintool/releases)
+* ProperTree 👉 👉 [https://github.com/corpnewt/ProperTree](https://github.com/corpnewt/ProperTree)
 
 
 ## 1) Definir Hardware:
@@ -335,7 +340,12 @@ Extra: Como instalar MacOS [Big Sur](https://youtu.be/i7F7WtXXbhs) e [Monterey](
 	* 	Configurar Wifi Intel no Big Sur 👉 👉 [https://youtu.be/L6HX0BZz4q4 ](https://youtu.be/L6HX0BZz4q4)
 	* Configurar Wifi Nativo Big Sur 👉 👉 [https://youtu.be/PRMdiiPSPBU](https://youtu.be/PRMdiiPSPBU)
 
+* Fix ProperTree 👉 [https://youtu.be/sgFvJKzcu3E
+](https://youtu.be/sgFvJKzcu3E)
 
+* Extra:
+	* Ativar Placas de Video NVIDIa Serie 600 e 700 NO MONTEREY  👉 [https://youtu.be/dcwoqn90Em0](https://youtu.be/dcwoqn90Em0)
+	* 	Fix Intel HD 4000 Monterey 👉 [https://youtu.be/sT2jPJ0ReaI](https://youtu.be/sT2jPJ0ReaI)
 
 ## 10) Referencias:
 
