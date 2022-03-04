@@ -1,6 +1,10 @@
 # HACKINTOSH: CRIANDO EFI OPENCORE P/DESKTOP INTEL COM OCAT (OC Auxiliary Tools)
 BONUS: GUIA DE INSTALAÇÃO COMPLETO 100% VANILLA 
 
+✅ Seguir o Vídeo Explicativo no Youtube 👉 [https://youtu.be/pC7-cL0sTAQ](https://youtu.be/pC7-cL0sTAQ)
+
+✅ Vídeo Extra Sobre Escolha dos Templates 👉 [https://youtu.be/pC7-cL0sTAQ](https://youtu.be/pC7-cL0sTAQ) 
+
 
 
 Importante:
